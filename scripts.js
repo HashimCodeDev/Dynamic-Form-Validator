@@ -2,7 +2,7 @@ const form = document.getElementById('userForm');
 const name = document.getElementById('name');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
-// const confirmPassword = document.getElementById('confirmPassword');
+const confirmPassword = document.getElementById('confirmPassword');
 const number = document.getElementById('number');
 const age = document.getElementById('age');
 let errorMessage = document.getElementById('error-message');
@@ -25,7 +25,7 @@ function checkInputs() {
   const nameValue = name.value.trim();
   const emailValue = email.value.trim();
   const passwordValue = password.value.trim();
-  // const confirmPasswordValue = confirmPassword.value.trim();
+  const confirmPasswordValue = confirmPassword.value.trim();
   const numberValue = number.value.trim();
   const ageValue = age.value.trim();
 
@@ -37,9 +37,10 @@ function checkInputs() {
     isValid = false;
   }
 
-  // if (passwordValue != confirmPasswordValue){
-  //     setError('passwordError', 'Passwords do not match');
-  // }
+  else if (passwordValue != confirmPasswordValue){
+    errorMessage.innerText = 'Passwords does not match';
+    isValid = false;  }
+
   else if (!/^\d+$/.test(numberValue)) {
     errorMessage.innerText = 'Invalid email format';
     isValid = false;
