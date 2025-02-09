@@ -13,6 +13,9 @@ form.addEventListener('submit', (e) => {
   if (checkInputs()) {
     form.reset();
     alert('Successfully submitted');
+  }else{
+    isValid = true;
+    console.log('Error')
   }
 });
 
