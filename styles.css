@@ -1,0 +1,23 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+}
+
+    .form-group{
+    margin:20px 600px;
+}
+
+.form-group 
+{
+    justify-content: center;
+    margin: 100 auto;
+}
