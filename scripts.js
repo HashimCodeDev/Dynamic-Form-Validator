@@ -34,7 +34,7 @@ function checkInputs() {
     isValid = false
   }
 
-  if (!isValidEmail(emailValue)) {
+  else if (!isValidEmail(emailValue)) {
     errorMessage.innerText = 'Invalid email format';
     isValid = false
   }
@@ -43,22 +43,22 @@ function checkInputs() {
   //     setError('passwordError', 'Passwords do not match');
   // }
 
-  if (!/^\d+$/.test(numberValue)) {
+  else if (!/^\d+$/.test(numberValue)) {
     errorMessage.innerText = 'Invalid email format';
     isValid = false
   }
 
-  if (numberValue.length != 10) {
+  else if (numberValue.length != 10) {
     errorMessage.innerText = 'Invalid email format';
     isValid = false
   }
 
-  if (!/^\d+$/.test(ageValue)) {
+  else if (!/^\d+$/.test(ageValue)) {
     errorMessage.innerText = 'Invalid email format';
     isValid = false
   }
 
-  if (age > 140) {
+  else if (age > 140) {
     errorMessage.innerText = 'Invalid email format';
     isValid = false
   }
