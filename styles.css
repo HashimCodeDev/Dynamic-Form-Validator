@@ -2,3 +2,13 @@
     display: flex;
     flex-direction: column;
 }
+
+    .form-group{
+    margin:20px 600px;
+}
+
+.form-group 
+{
+    justify-content: center;
+    margin: 100 auto;
+}
