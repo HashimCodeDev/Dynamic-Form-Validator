@@ -1,6 +1,15 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .form-group{
     display: flex;
     flex-direction: column;
+    position: relative;
+    top: 100px;
 }
 
     .form-group{
