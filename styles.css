@@ -51,5 +51,5 @@
     transition: 0.3s all ease-in;
 }
 .btn:hover{
-    background-color: var(--dark-color);
+    background-color: var(--danger-color);
 }
