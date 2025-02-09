@@ -35,23 +35,20 @@ function checkInputs() {
   } else if (!isValidEmail(emailValue)) {
     errorMessage.innerText = 'Invalid email format';
     isValid = false;
-  }
-
-  else if (passwordValue != confirmPasswordValue){
+  } else if (passwordValue != confirmPasswordValue) {
     errorMessage.innerText = 'Passwords does not match';
-    isValid = false;  }
-
-  else if (!/^\d+$/.test(numberValue)) {
-    errorMessage.innerText = 'Invalid email format';
+    isValid = false;
+  } else if (!/^\d+$/.test(numberValue)) {
+    errorMessage.innerText = 'Invalid number';
     isValid = false;
   } else if (numberValue.length != 10) {
-    errorMessage.innerText = 'Invalid email format';
+    errorMessage.innerText = 'Invalid phone number';
     isValid = false;
   } else if (!/^\d+$/.test(ageValue)) {
     errorMessage.innerText = 'Invalid email format';
     isValid = false;
-  } else if (age > 140) {
-    errorMessage.innerText = 'Invalid email format';
+  } else if (age < 18) {
+    errorMessage.innerText = 'Invalid Age';
     isValid = false;
   }
 
