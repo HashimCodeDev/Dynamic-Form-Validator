@@ -1,4 +1,15 @@
+:root {
+    --primary-color:#131010;
+    --secondary-color:#91AC8F;
+    --dark-color: #FFF0DC;
+    --light-color: #f4f4f4;
+    --danger-color: #dc3545;
+}
+
+
 .container{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -17,7 +28,14 @@
 }
 
 .form-group 
-{
+{ border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    padding: 30px;
     justify-content: center;
     margin: 100 auto;
+    background-color: var(--light-color);
+}
+.form-group label{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
